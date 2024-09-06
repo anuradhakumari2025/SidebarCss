@@ -1,0 +1,118 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.mainBox {
+  background-image: url("photo.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.btnTwo i {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 60px;
+  position: absolute;
+  left: 310px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.btnOne i {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.sidebarMenu {
+  left: -350px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  height: 100vh;
+  width: 350px;
+  position: fixed;
+  transition: all 0.3s linear;
+}
+.sidebarMenu .logo {
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  line-height: 60px;
+}
+.sidebarMenu .logo a {
+  text-decoration: none;
+  color: white;
+  left: 45px;
+  position: absolute;
+  font-weight: 500;
+}
+.sidebarMenu .menu {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  top: 80px;
+}
+.sidebarMenu .menu li {
+  color: white;
+  font-size: 20px;
+  margin-top: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.sidebarMenu .menu i {
+  padding-right: 10px;
+}
+.sidebarMenu .menu a {
+  color: white;
+  text-decoration: none;
+  margin-top: 6px;
+  /* padding: 10px 10px; */
+}
+
+.socialMedia {
+  position: absolute;
+  left: 25%;
+  bottom: 50px;
+  color: white;
+}
+.socialMedia i {
+  padding: 0px 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+}
+#check {
+  display: none;
+}
+.menu li:hover {
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+.btnOne i:hover {
+  font-size: 40px;
+}
+.btnTwo i:hover {
+  font-size: 40px;
+}
+.socialMedia i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+#check:checked ~ .sidebarMenu {
+  left: 0;
+}
+#check:checked ~ .btnOne i {
+  opacity: 0;
+}
+#check:checked ~ .sidebarMenu .btnTwo i {
+  opacity: 1;
+}
